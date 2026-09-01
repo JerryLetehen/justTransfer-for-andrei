@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Частный трансфер из Польши и Германии в Калининград и обратно. Дверь в дверь, фиксированная цена, комфортный автомобиль.">
+  <meta name="theme-color" content="#0b1730">
+  <title>Трансфер из Европы в Калининград — Just Transfer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0b1730;--navy2:#122344;--accent:#ff8a00;--text:#182235;--muted:#657087;--bg:#f5f7fb;--white:#fff;--line:#e5e9f1;--radius:18px;--shadow:0 18px 50px rgba(11,23,48,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.55}
+    a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}
+    .container{width:min(1160px,calc(100% - 32px));margin:auto}.header{position:sticky;top:0;z-index:50;background:rgba(11,23,48,.96);backdrop-filter:blur(10px);color:#fff}
+    .nav{min-height:72px;display:flex;align-items:center;gap:28px}.logo{font-weight:800;font-size:21px;letter-spacing:-.5px;white-space:nowrap}.logo span{color:var(--accent)}
+    .menu{display:flex;gap:22px;align-items:center;margin-left:auto}.menu a{font-size:14px;color:#dce3f1}.menu a:hover{color:#fff}
+    .actions{display:flex;align-items:center;gap:10px}.langs{display:flex;gap:4px}.lang{border:1px solid rgba(255,255,255,.18);background:transparent;color:#cdd5e4;border-radius:8px;padding:7px 8px;font-size:12px}.lang.active{background:#fff;color:var(--navy)}
+    .phone{font-weight:700;font-size:14px}.btn{border:0;border-radius:12px;padding:13px 18px;font-weight:700;transition:.2s;display:inline-flex;justify-content:center;align-items:center;gap:8px}.btn-primary{background:var(--accent);color:#151515;box-shadow:0 8px 20px rgba(255,138,0,.25)}.btn-primary:hover{transform:translateY(-1px);filter:brightness(1.05)}.btn-dark{background:var(--navy);color:#fff}.btn-light{background:#fff;color:var(--navy);border:1px solid var(--line)}
+    .mobile-toggle{display:none;background:none;border:0;color:#fff;font-size:24px}
+    .hero{background:linear-gradient(135deg,#0b1730 0%,#162b50 100%);color:#fff;padding:72px 0 88px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;color:#ffd09b;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:15px}.dot{width:7px;height:7px;background:var(--accent);border-radius:50%}
+    h1{font-size:clamp(38px,5vw,64px);line-height:1.03;letter-spacing:-2.8px;margin:0 0 20px}.hero p{color:#cbd5e5;font-size:18px;max-width:620px;margin:0 0 25px}
+    .hero-points{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.point{font-size:13px;color:#e6ebf4;display:flex;align-items:center;gap:7px}.point b{color:#70e2a2}
+    .booking{background:#fff;color:var(--text);border-radius:22px;padding:25px;box-shadow:0 25px 70px rgba(0,0,0,.22)}.booking h2{font-size:22px;margin:0 0 4px}.booking-sub{font-size:13px;color:var(--muted);margin:0 0 18px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field.full{grid-column:1/-1}.field label{display:block;font-size:12px;font-weight:700;margin:0 0 6px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;background:#fbfcfe;outline:0}.field input:focus,.field select:focus,.field textarea:focus{border-color:#9ca9c0;box-shadow:0 0 0 3px rgba(37,75,130,.08)}
+    .form-note{font-size:11px;color:var(--muted);margin:10px 0 0}.error{border-color:#e5484d!important}.result{display:none;margin-top:14px;background:#eef8f2;border:1px solid #c7ead5;border-radius:12px;padding:12px;font-size:13px}.result strong{display:block;font-size:18px}.result.err{background:#fdeff0;border-color:#f3c6c9;color:#b4272c}.hp{position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px;height:1px;opacity:0;pointer-events:none}
+    section{padding:82px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-1.5px;margin:0 0 12px}.section-head p{color:var(--muted);margin:0}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step,.route,.fleet-card,.faq-item,.contact-card{border:1px solid var(--line);border-radius:var(--radius);background:#fff}.step{padding:25px}.icon{width:44px;height:44px;border-radius:12px;background:#eef3fb;color:var(--navy);display:grid;place-items:center;font-size:20px;margin-bottom:20px}.step h3,.fleet-card h3{margin:0 0 8px;font-size:17px}.step p,.fleet-card p{color:var(--muted);font-size:14px;margin:0}
+    .gray{background:var(--bg)}.routes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.route{padding:22px;box-shadow:0 7px 25px rgba(11,23,48,.04)}.route-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.route h3{margin:0;font-size:19px}.badge{font-size:11px;background:#fff1df;color:#a95700;border-radius:99px;padding:5px 8px;font-weight:700}.route-meta{display:flex;gap:16px;color:var(--muted);font-size:12px;margin:15px 0}.price{font-size:25px;font-weight:800;margin:4px 0 17px}.route .btn{width:100%;padding:11px}
+    .fleet{display:grid;grid-template-columns:1fr 1fr;gap:18px}.fleet-card{padding:28px;display:flex;gap:20px;align-items:center;overflow:hidden}.car-art{width:150px;height:95px;flex:none;background:linear-gradient(135deg,#dce5f3,#f5f7fb);border-radius:14px;display:grid;place-items:center;font-size:55px}.fleet-card ul{padding:0;margin:14px 0 0;list-style:none;color:var(--muted);font-size:13px}.fleet-card li{margin:5px 0}.fleet-card li:before{content:"✓";color:#28a365;font-weight:800;margin-right:7px}
+    .border{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:stretch}.info{background:var(--navy);color:#fff;border-radius:22px;padding:35px}.info h2{font-size:36px;line-height:1.1;margin:0 0 15px}.info p{color:#c7d1e2}.info ul{list-style:none;padding:0;margin:25px 0 0}.info li{margin:13px 0;display:flex;gap:10px}.info li span{color:#76e0a4}.tips{display:grid;grid-template-columns:1fr 1fr;gap:14px}.tip{background:var(--bg);border-radius:15px;padding:20px}.tip h3{margin:0 0 7px;font-size:15px}.tip p{margin:0;color:var(--muted);font-size:13px}
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{padding:25px;border:1px solid var(--line);border-radius:var(--radius)}.stars{letter-spacing:2px;margin-bottom:12px}.review p{font-size:14px;margin:0 0 18px}.author{font-size:12px;color:var(--muted);font-weight:600}
+    .faq{max-width:850px;margin:auto}.faq-item{margin-bottom:10px;overflow:hidden}.faq-q{width:100%;border:0;background:#fff;padding:19px 20px;text-align:left;font-weight:700;display:flex;justify-content:space-between;align-items:center}.faq-a{display:none;padding:0 20px 19px;color:var(--muted);font-size:14px}.faq-item.open .faq-a{display:block}.faq-q span:last-child{transition:transform .2s}.faq-item.open .faq-q span:last-child{transform:rotate(45deg)}
+    .contact{background:var(--bg)}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px}.contact-card{padding:30px}.contact-card h2{margin:0 0 10px;font-size:30px}.contact-card p{color:var(--muted)}.contact-links{display:grid;gap:10px;margin-top:20px}.contact-link{padding:14px;border:1px solid var(--line);border-radius:11px;background:#fff;font-weight:700}
+    footer{background:#071126;color:#aeb9cb;padding:35px 0}.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-logo{color:#fff;font-weight:800}.footer-logo span{color:var(--accent)}footer small{font-size:11px}
+    .float{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;flex-direction:column;gap:9px}.float a{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;box-shadow:0 8px 25px rgba(0,0,0,.18)}.wa{background:#25d366}.tg{background:#229ed9}
+    @media(max-width:900px){.menu{display:none}.mobile-toggle{display:block;margin-left:auto}.phone{display:none}.hero-grid,.border,.contact-grid{grid-template-columns:1fr}.hero{padding:55px 0}.steps{grid-template-columns:1fr 1fr}.routes,.reviews{grid-template-columns:1fr 1fr}.fleet{grid-template-columns:1fr}}
+    @media(max-width:620px){.container{width:min(100% - 22px,1160px)}.nav{min-height:64px}.actions .btn{display:none}h1{letter-spacing:-1.8px}.form-grid,.steps,.routes,.reviews,.tips{grid-template-columns:1fr}.field.full{grid-column:auto}.booking{padding:18px}.fleet-card{align-items:flex-start}.car-art{width:100px;height:75px;font-size:40px}.hero-points{display:grid}.section-head{text-align:left}.footer-grid{display:grid}.float{right:12px;bottom:12px}}
+  </style>
+  <!-- При разделении языков на /ru/, /en/, /pl/, /de/ добавьте отдельные hreflang-ссылки:
+       <link rel="alternate" hreflang="ru" href="https://example.com/ru/">
+       и аналогично для остальных языков. -->
+  <script type="application/ld+json" id="schema">{
+    "@context":"https://schema.org","@type":"TaxiService","name":"Just Transfer",
+    "description":"Частный трансфер из Польши и Германии в Калининград и обратно.",
+    "areaServed":["Poland","Germany","Kaliningrad"],"priceRange":"$$"
+  }</script>
+</head>
+<body>
+<header class="header"><div class="container nav">
+  <a class="logo" href="#">JUST<span>TRANSFER</span></a>
+  <nav class="menu"><a href="#routes" data-i18n="nav.routes">Маршруты</a><a href="#how" data-i18n="nav.how">Как забронировать</a><a href="#fleet" data-i18n="nav.fleet">Автопарк</a><a href="#reviews" data-i18n="nav.reviews">Отзывы</a><a href="#contacts" data-i18n="nav.contacts">Контакты</a></nav>
+  <div class="actions"><div class="langs"><button class="lang active" data-lang="ru">RU</button><button class="lang" data-lang="en">EN</button><button class="lang" data-lang="pl">PL</button><button class="lang" data-lang="de">DE</button></div><a class="btn btn-primary" href="#contacts" data-i18n="cta.order">Заказать</a></div>
+  <button class="mobile-toggle" aria-label="Menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+  <div>
+    <div class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Частный трансфер Европа → Калининград</span></div>
+    <h1 data-i18n="hero.title">Трансфер из Европы в Калининград без пересадок</h1>
+    <p data-i18n="hero.text">Дверь в дверь на комфортном автомобиле. Заберём по адресу, поможем подготовиться к границе и доставим прямо до места назначения.</p>
+    <div class="hero-points"><div class="point"><b>✓</b><span data-i18n="hero.p1">Фиксированная цена</span></div><div class="point"><b>✓</b><span data-i18n="hero.p2">Дверь в дверь</span></div><div class="point"><b>✓</b><span data-i18n="hero.p3">Связь с водителем</span></div></div>
+  </div>
+  <form class="booking" id="bookingForm">
+    <h2 data-i18n="form.title">Рассчитать поездку</h2><p class="booking-sub" data-i18n="form.sub">Заполните 5 полей — мы свяжемся и подтвердим цену.</p>
+    <div class="form-grid">
+      <div class="field"><label data-i18n="form.from">Откуда *</label><select id="from" required></select><input id="fromCustom" type="text" style="display:none;margin-top:8px" data-i18n-ph="form.citytype" placeholder="Введите город"></div>
+      <div class="field"><label data-i18n="form.to">Куда *</label><select id="to" required></select><input id="toCustom" type="text" style="display:none;margin-top:8px" data-i18n-ph="form.citytype" placeholder="Введите город"></div>
+      <div class="field"><label data-i18n="form.date">Дата *</label><input id="date" type="date" required></div>
+      <div class="field"><label data-i18n="form.time">Время *</label><input id="time" type="time" required></div>
+      <div class="field"><label data-i18n="form.passengers">Пассажиры *</label><select id="passengers" required><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+      <div class="field"><label data-i18n="form.phone">Телефон / WhatsApp *</label><input id="phone" type="tel" placeholder="+48 ..." maxlength="16" required></div>
+      <div class="field full"><button class="btn btn-primary" style="width:100%" type="submit" data-i18n="form.submit">Рассчитать стоимость →</button></div>
+    </div>
+    <div class="hp" aria-hidden="true"><label>Website<input id="bookingHp" type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="result" id="result"></div><p class="form-note" data-i18n="form.note">Нажимая кнопку, вы соглашаетесь на обработку заявки для связи по поездке.</p>
+  </form>
+</div></section>
+
+<section id="how"><div class="container"><div class="section-head"><h2 data-i18n="how.title">Как это работает</h2><p data-i18n="how.sub">Простой процесс без лишних действий.</p></div>
+<div class="steps"><div class="step"><div class="icon">01</div><h3 data-i18n="steps.1h">Оставляете заявку</h3><p data-i18n="steps.1p">Указываете маршрут, дату, время и количество пассажиров.</p></div>
+<div class="step"><div class="icon">02</div><h3 data-i18n="steps.2h">Подтверждаем</h3><p data-i18n="steps.2p">Уточняем детали, фиксируем цену и время подачи.</p></div>
+<div class="step"><div class="icon">03</div><h3 data-i18n="steps.3h">Водитель встречает</h3><p data-i18n="steps.3p">Приезжает в назначенное место и остаётся на связи.</p></div>
+<div class="step"><div class="icon">04</div><h3 data-i18n="steps.4h">Едем до адреса</h3><p data-i18n="steps.4p">Без пересадок — прямо до вашего адреса в Калининграде.</p></div></div></div></section>
+
+<section id="routes" class="gray"><div class="container"><div class="section-head"><h2 data-i18n="routes.title">Популярные маршруты</h2><p data-i18n="routes.sub">Ориентировочные цены. Финальная стоимость зависит от адреса и количества пассажиров.</p></div><div class="routes" id="routeList"></div></div></section>
+
+<section id="fleet"><div class="container"><div class="section-head"><h2 data-i18n="fleet.title">Комфортный автопарк</h2><p data-i18n="fleet.sub">Автомобиль подбираем под количество пассажиров и багажа.</p></div>
+<div class="fleet"><div class="fleet-card"><div class="car-art">🚘</div><div><h3 data-i18n="fleet.sedan">Седан</h3><p data-i18n="fleet.sedantxt">Для 1–3 пассажиров и стандартного багажа.</p><ul><li data-i18n="fleet.a1">Кондиционер</li><li data-i18n="fleet.a2">Комфортный салон</li><li data-i18n="fleet.a3">Зарядка для телефона</li></ul></div></div>
+<div class="fleet-card"><div class="car-art">🚐</div><div><h3 data-i18n="fleet.van">Минивэн</h3><p data-i18n="fleet.vantxt">Для групп до 7 пассажиров и большого багажа.</p><ul><li data-i18n="fleet.a4">Больше места</li><li data-i18n="fleet.a5">Большой багажник</li><li data-i18n="fleet.a6">Идеально для семьи/группы</li></ul></div></div></div></div></section>
+
+<section class="gray"><div class="container border"><div class="info"><h2 data-i18n="border.title">Что с границей?</h2><p data-i18n="border.text">Мы заранее объясним, какие документы и условия актуальны для вашей поездки.</p><ul><li><span>✓</span><span data-i18n="border.1">Подскажем, что взять с собой</span></li><li><span>✓</span><span data-i18n="border.2">Объясним порядок прохождения границы</span></li><li><span>✓</span><span data-i18n="border.3">Остаёмся на связи во время поездки</span></li></ul></div>
+<div class="tips"><div class="tip"><h3 data-i18n="tips.1h">Документы</h3><p data-i18n="tips.1p">Проверьте заранее паспорт, визу/основание для въезда и другие необходимые документы.</p></div><div class="tip"><h3 data-i18n="tips.2h">Багаж</h3><p data-i18n="tips.2p">Сообщите о крупном или нестандартном багаже при бронировании.</p></div><div class="tip"><h3 data-i18n="tips.3h">Ожидание</h3><p data-i18n="tips.3p">Время прохождения границы может меняться и не зависит полностью от водителя.</p></div><div class="tip"><h3 data-i18n="tips.4h">Важно</h3><p data-i18n="tips.4p">Правила въезда и документы меняются — перед поездкой проверяйте актуальные требования.</p></div></div></div></section>
+
+<section id="reviews"><div class="container"><div class="section-head"><h2 data-i18n="reviews.title">Клиенты возвращаются к нам</h2><p data-i18n="reviews.sub">Примеры отзывов — замените их на реальные отзывы после запуска.</p></div><div class="reviews">
+<div class="review"><div class="stars">★★★★★</div><p data-i18n="reviews.r1">«Очень удобно: забрали прямо от квартиры в Гданьске и довезли до нужного адреса в Калининграде. Всё спокойно и без пересадок.»</p><div class="author">— Мария, Гданьск → Калининград</div></div>
+<div class="review"><div class="stars">★★★★★</div><p data-i18n="reviews.r2">«Водитель был на связи, заранее объяснили нюансы поездки. Машина чистая, дорога прошла комфортно.»</p><div class="author">— Алексей, Варшава → Калининград</div></div>
+<div class="review"><div class="stars">★★★★★</div><p data-i18n="reviews.r3">«Ехали семьёй с багажом. Минивэн оказался отличным вариантом, места хватило всем.»</p><div class="author">— Елена, Берлин → Калининград</div></div>
+</div></div></section>
+
+<section class="gray"><div class="container"><div class="section-head"><h2>FAQ</h2><p data-i18n="faq.sub">Ответы на частые вопросы перед поездкой.</p></div><div class="faq" id="faq">
+<div class="faq-item"><button class="faq-q"><span data-i18n="faq.q1">Можно ли с животными?</span><span>＋</span></button><div class="faq-a" data-i18n="faq.a1">Да, но обязательно сообщите об этом при бронировании. Условия зависят от размера животного и требований к перевозке.</div></div>
+<div class="faq-item"><button class="faq-q"><span data-i18n="faq.q2">Сколько багажа можно взять?</span><span>＋</span></button><div class="faq-a" data-i18n="faq.a2">Стандартный багаж входит в поездку. О крупном или нестандартном багаже сообщите заранее.</div></div>
+<div class="faq-item"><button class="faq-q"><span data-i18n="faq.q3">Как оплатить?</span><span>＋</span></button><div class="faq-a" data-i18n="faq.a3">Способ оплаты согласовывается при подтверждении заказа.</div></div>
+<div class="faq-item"><button class="faq-q"><span data-i18n="faq.q4">Что если мой рейс задержится?</span><span>＋</span></button><div class="faq-a" data-i18n="faq.a4">Сообщите нам как можно раньше. Для поездок от аэропорта время подачи можно скорректировать по ситуации.</div></div>
+<div class="faq-item"><button class="faq-q"><span data-i18n="faq.q5">Работаете ли ночью?</span><span>＋</span></button><div class="faq-a" data-i18n="faq.a5">Да, поездки можно согласовать на удобное время, включая раннее утро и ночь.</div></div>
+</div></div></section>
+
+<section id="contacts" class="contact"><div class="container contact-grid"><div class="contact-card"><h2 data-i18n="contact.title">Готовы ехать?</h2><p data-i18n="contact.text">Оставьте заявку или напишите нам в мессенджер. Уточним маршрут и сообщим финальную стоимость.</p><div class="contact-links"><a class="contact-link" href="https://wa.me/48722169985">WhatsApp →</a><a class="contact-link" href="https://t.me/kzarkaat">Telegram →</a></div></div>
+<div class="contact-card"><h2 data-i18n="contact.formtitle">Заказать трансфер</h2><form id="contactForm"><div class="form-grid"><div class="field"><label data-i18n="form.name">Имя</label><input id="cName" required data-i18n-ph="form.nameph" placeholder="Ваше имя"></div><div class="field"><label data-i18n="form.phone2">Телефон</label><input id="cPhone" type="tel" required maxlength="16" placeholder="+48 ..."></div><div class="field full"><label data-i18n="form.message">Маршрут и детали</label><textarea id="cMessage" rows="4" required data-i18n-ph="form.messageph" placeholder="Например: Гданьск → Калининград, 2 человека, 10 сентября"></textarea></div><div class="hp full" aria-hidden="true"><label>Website<input id="contactHp" type="text" name="website" tabindex="-1" autocomplete="off"></label></div><div class="field full"><button class="btn btn-primary" type="submit" data-i18n="contact.submit">Отправить заявку</button></div></div></form></div></div></section>
+</main>
+
+<footer><div class="container footer-grid"><div class="footer-logo">JUST<span>TRANSFER</span></div><small data-i18n="footer.copy">© 2026 Just Transfer. Частный пассажирский трансфер.</small><small data-i18n="footer.legal">Информация на сайте не заменяет официальные требования государственных органов.</small></div></footer>
+<div class="float"><a class="wa" href="https://wa.me/48722169985" aria-label="WhatsApp">WA</a><a class="tg" href="https://t.me/kzarkaat" aria-label="Telegram">TG</a></div>
+
+<script>
+const routes=[
+ {city:"Berlin",ru:["Берлин","€500–600","8–10 ч"],en:["Berlin","€500–600","8–10 h"],pl:["Berlin","€500–600","8–10 h"],de:["Berlin","€500–600","8–10 Std."]},
+ {city:"Warsaw",ru:["Варшава","€350–400","6–8 ч"],en:["Warsaw","€350–400","6–8 h"],pl:["Warszawa","€350–400","6–8 h"],de:["Warschau","€350–400","6–8 Std."]},
+ {city:"Gdansk",ru:["Гданьск","€200–250","3–4 ч"],en:["Gdańsk","€200–250","3–4 h"],pl:["Gdańsk","€200–250","3–4 h"],de:["Danzig","€200–250","3–4 Std."]},
+ {city:"Poznan",ru:["Познань","€450–500","7–9 ч"],en:["Poznań","€450–500","7–9 h"],pl:["Poznań","€450–500","7–9 h"],de:["Posen","€450–500","7–9 Std."]},
+ {city:"Olsztyn",ru:["Ольштын","€250–300","4–5 ч"],en:["Olsztyn","€250–300","4–5 h"],pl:["Olsztyn","€250–300","4–5 h"],de:["Allenstein","€250–300","4–5 Std."]},
+ {city:"Hamburg",ru:["Гамбург","€850–900","10–12 ч"],en:["Hamburg","€850–900","10–12 h"],pl:["Hamburg","€850–900","10–12 h"],de:["Hamburg","€850–900","10–12 Std."]}
+];
+
+const dict={
+ru:{
+"nav.routes":"Маршруты","nav.how":"Как забронировать","nav.fleet":"Автопарк","nav.reviews":"Отзывы","nav.contacts":"Контакты","cta.order":"Заказать",
+"hero.eyebrow":"Частный трансфер Европа → Калининград","hero.title":"Трансфер из Европы в Калининград без пересадок","hero.text":"Дверь в дверь на комфортном автомобиле. Заберём по адресу, поможем подготовиться к границе и доставим прямо до места назначения.","hero.p1":"Фиксированная цена","hero.p2":"Дверь в дверь","hero.p3":"Связь с водителем",
+"form.title":"Рассчитать поездку","form.sub":"Заполните 5 полей — мы свяжемся и подтвердим цену.","form.from":"Откуда *","form.to":"Куда *","form.date":"Дата *","form.time":"Время *","form.passengers":"Пассажиры *","form.phone":"Телефон / WhatsApp *","form.submit":"Рассчитать стоимость →","form.othercity":"Другой город (ввести вручную)","form.citytype":"Введите город","form.note":"Нажимая кнопку, вы соглашаетесь на обработку заявки для связи по поездке.","err.title":"Проверьте форму","err.required":"Пожалуйста, заполните выделенные поля.","err.phone":"Введите корректный номер телефона.","err.phoneplus":"Номер должен начинаться со знака «+» и содержать только цифры.",
+"how.title":"Как это работает","how.sub":"Простой процесс без лишних действий.","steps.1h":"Оставляете заявку","steps.1p":"Указываете маршрут, дату, время и количество пассажиров.","steps.2h":"Подтверждаем","steps.2p":"Уточняем детали, фиксируем цену и время подачи.","steps.3h":"Водитель встречает","steps.3p":"Приезжает в назначенное место и остаётся на связи.","steps.4h":"Едем до адреса","steps.4p":"Без пересадок — прямо до вашего адреса в Калининграде.",
+"routes.title":"Популярные маршруты","routes.sub":"Ориентировочные цены. Финальная стоимость зависит от адреса и количества пассажиров.","route.order":"Заказать маршрут","route.from":"из",
+"fleet.title":"Комфортный автопарк","fleet.sub":"Автомобиль подбираем под количество пассажиров и багажа.","fleet.sedan":"Седан","fleet.sedantxt":"Для 1–3 пассажиров и стандартного багажа.","fleet.van":"Минивэн","fleet.vantxt":"Для групп до 7 пассажиров и большого багажа.","fleet.a1":"Кондиционер","fleet.a2":"Комфортный салон","fleet.a3":"Зарядка для телефона","fleet.a4":"Больше места","fleet.a5":"Большой багажник","fleet.a6":"Идеально для семьи/группы",
+"border.title":"Что с границей?","border.text":"Мы заранее объясним, какие документы и условия актуальны для вашей поездки.","border.1":"Подскажем, что взять с собой","border.2":"Объясним порядок прохождения границы","border.3":"Остаёмся на связи во время поездки","tips.1h":"Документы","tips.1p":"Проверьте заранее паспорт, визу/основание для въезда и другие необходимые документы.","tips.2h":"Багаж","tips.2p":"Сообщите о крупном или нестандартном багаже при бронировании.","tips.3h":"Ожидание","tips.3p":"Время прохождения границы может меняться и не зависит полностью от водителя.","tips.4h":"Важно","tips.4p":"Правила въезда и документы меняются — перед поездкой проверяйте актуальные требования.",
+"reviews.title":"Клиенты возвращаются к нам","reviews.sub":"Примеры отзывов — замените их на реальные отзывы после запуска.","reviews.r1":"«Очень удобно: забрали прямо от квартиры в Гданьске и довезли до нужного адреса в Калининграде. Всё спокойно и без пересадок.»","reviews.r2":"«Водитель был на связи, заранее объяснили нюансы поездки. Машина чистая, дорога прошла комфортно.»","reviews.r3":"«Ехали семьёй с багажом. Минивэн оказался отличным вариантом, места хватило всем.»",
+"faq.sub":"Ответы на частые вопросы перед поездкой.","faq.q1":"Можно ли с животными?","faq.a1":"Да, но обязательно сообщите об этом при бронировании. Условия зависят от размера животного и требований к перевозке.","faq.q2":"Сколько багажа можно взять?","faq.a2":"Стандартный багаж входит в поездку. О крупном или нестандартном багаже сообщите заранее.","faq.q3":"Как оплатить?","faq.a3":"Способ оплаты согласовывается при подтверждении заказа.","faq.q4":"Что если мой рейс задержится?","faq.a4":"Сообщите нам как можно раньше. Для поездок от аэропорта время подачи можно скорректировать по ситуации.","faq.q5":"Работаете ли ночью?","faq.a5":"Да, поездки можно согласовать на удобное время, включая раннее утро и ночь.",
+"contact.title":"Готовы ехать?","contact.text":"Оставьте заявку или напишите нам в мессенджер. Уточним маршрут и сообщим финальную стоимость.","contact.formtitle":"Заказать трансфер","form.name":"Имя","form.phone2":"Телефон","form.message":"Маршрут и детали","form.nameph":"Ваше имя","form.messageph":"Например: Гданьск → Калининград, 2 человека, 10 сентября","contact.submit":"Отправить заявку","footer.copy":"© 2026 Just Transfer. Частный пассажирский трансфер.","footer.legal":"Информация на сайте не заменяет официальные требования государственных органов."
+},
+en:{
+"nav.routes":"Routes","nav.how":"How to book","nav.fleet":"Fleet","nav.reviews":"Reviews","nav.contacts":"Contacts","cta.order":"Book",
+"hero.eyebrow":"Private transfer Europe → Kaliningrad","hero.title":"Private transfer from Europe to Kaliningrad, direct","hero.text":"Door-to-door travel in a comfortable car. We pick you up at your address, help you prepare for the border and take you directly to your destination.","hero.p1":"Fixed price","hero.p2":"Door to door","hero.p3":"Driver on call",
+"form.title":"Calculate your trip","form.sub":"Fill in 5 fields — we will contact you and confirm the price.","form.from":"From *","form.to":"To *","form.date":"Date *","form.time":"Time *","form.passengers":"Passengers *","form.phone":"Phone / WhatsApp *","form.submit":"Calculate price →","form.othercity":"Other city (type manually)","form.citytype":"Enter city","form.note":"By submitting, you agree to be contacted about your trip.","err.title":"Check the form","err.required":"Please fill in the highlighted fields.","err.phone":"Please enter a valid phone number.","err.phoneplus":"The number must start with “+” and contain digits only.",
+"how.title":"How it works","how.sub":"A simple process with no unnecessary steps.","steps.1h":"Send a request","steps.1p":"Tell us your route, date, time and passenger count.","steps.2h":"We confirm","steps.2p":"We clarify details and fix the price and pickup time.","steps.3h":"Driver meets you","steps.3p":"Your driver arrives at the agreed location and stays in touch.","steps.4h":"Direct to your address","steps.4p":"No transfers — straight to your address in Kaliningrad.",
+"routes.title":"Popular routes","routes.sub":"Indicative prices. Final price depends on the address and passenger count.","route.order":"Book this route","route.from":"from",
+"fleet.title":"Comfortable fleet","fleet.sub":"We choose the vehicle based on passengers and luggage.","fleet.sedan":"Sedan","fleet.sedantxt":"For 1–3 passengers and standard luggage.","fleet.van":"Minivan","fleet.vantxt":"For groups up to 7 passengers and more luggage.","fleet.a1":"Air conditioning","fleet.a2":"Comfortable cabin","fleet.a3":"Phone charging","fleet.a4":"More space","fleet.a5":"Large luggage area","fleet.a6":"Great for families/groups",
+"border.title":"What about the border?","border.text":"We will explain in advance which documents and conditions are relevant to your trip.","border.1":"Tell you what to bring","border.2":"Explain the border procedure","border.3":"Stay in touch during the trip","tips.1h":"Documents","tips.1p":"Check your passport, visa/entry basis and other required documents in advance.","tips.2h":"Luggage","tips.2p":"Tell us about oversized or unusual luggage when booking.","tips.3h":"Waiting","tips.3p":"Border crossing time can change and is not fully controlled by the driver.","tips.4h":"Important","tips.4p":"Entry rules and documents change — check current requirements before travelling.",
+"reviews.title":"Our clients come back","reviews.sub":"Sample reviews — replace them with real reviews after launch.","reviews.r1":"“Very convenient: picked us up at our apartment in Gdańsk and drove us to the exact address in Kaliningrad. Smooth and direct.”","reviews.r2":"“The driver stayed in touch and explained the trip details beforehand. Clean car and a comfortable journey.”","reviews.r3":"“We travelled as a family with luggage. The minivan was perfect and had plenty of room.”",
+"faq.sub":"Answers to common questions before your trip.","faq.q1":"Can I travel with a pet?","faq.a1":"Yes, but tell us when booking. Conditions depend on the animal and transport requirements.","faq.q2":"How much luggage can I take?","faq.a2":"Standard luggage is included. Tell us about oversized or unusual luggage in advance.","faq.q3":"How can I pay?","faq.a3":"The payment method is agreed when the booking is confirmed.","faq.q4":"What if my flight is delayed?","faq.a4":"Let us know as soon as possible. Airport pickup times can be adjusted to the situation.","faq.q5":"Do you operate at night?","faq.a5":"Yes, trips can be arranged at a convenient time, including early morning and night.",
+"contact.title":"Ready to travel?","contact.text":"Send a request or message us. We will confirm the route and final price.","contact.formtitle":"Book a transfer","form.name":"Name","form.phone2":"Phone","form.message":"Route and details","form.nameph":"Your name","form.messageph":"e.g. Gdańsk → Kaliningrad, 2 people, 10 September","contact.submit":"Send request","footer.copy":"© 2026 Just Transfer. Private passenger transfer.","footer.legal":"Website information does not replace official requirements of government authorities."
+},
+pl:{
+"nav.routes":"Trasy","nav.how":"Jak zarezerwować","nav.fleet":"Flota","nav.reviews":"Opinie","nav.contacts":"Kontakt","cta.order":"Zamów",
+"hero.eyebrow":"Prywatny transfer Europa → Kaliningrad","hero.title":"Transfer z Europy do Kaliningradu bez przesiadek","hero.text":"Przejazd door-to-door komfortowym samochodem. Odbierzemy Cię spod adresu, pomożemy przygotować się do granicy i zawieziemy bezpośrednio na miejsce.","hero.p1":"Stała cena","hero.p2":"Door to door","hero.p3":"Kontakt z kierowcą",
+"form.title":"Oblicz przejazd","form.sub":"Wypełnij 5 pól — skontaktujemy się i potwierdzimy cenę.","form.from":"Skąd *","form.to":"Dokąd *","form.date":"Data *","form.time":"Godzina *","form.passengers":"Pasażerowie *","form.phone":"Telefon / WhatsApp *","form.submit":"Oblicz cenę →","form.othercity":"Inne miasto (wpisz ręcznie)","form.citytype":"Wpisz miasto","form.note":"Wysyłając formularz, zgadzasz się na kontakt w sprawie przejazdu.","err.title":"Sprawdź formularz","err.required":"Uzupełnij zaznaczone pola.","err.phone":"Podaj prawidłowy numer telefonu.","err.phoneplus":"Numer musi zaczynać się od „+” i zawierać tylko cyfry.",
+"how.title":"Jak to działa","how.sub":"Prosty proces bez zbędnych formalności.","steps.1h":"Wysyłasz zgłoszenie","steps.1p":"Podajesz trasę, datę, godzinę i liczbę pasażerów.","steps.2h":"Potwierdzamy","steps.2p":"Ustalamy szczegóły, cenę i godzinę odbioru.","steps.3h":"Kierowca odbiera","steps.3p":"Przyjeżdża w ustalone miejsce i pozostaje w kontakcie.","steps.4h":"Jedziemy pod adres","steps.4p":"Bez przesiadek — bezpośrednio pod wskazany adres w Kaliningradzie.",
+"routes.title":"Popularne trasy","routes.sub":"Ceny orientacyjne. Ostateczna cena zależy od adresu i liczby pasażerów.","route.order":"Zamów tę trasę","route.from":"od",
+"fleet.title":"Komfortowa flota","fleet.sub":"Samochód dobieramy do liczby pasażerów i bagażu.","fleet.sedan":"Sedan","fleet.sedantxt":"Dla 1–3 pasażerów i standardowego bagażu.","fleet.van":"Minivan","fleet.vantxt":"Dla grup do 7 osób i większej ilości bagażu.","fleet.a1":"Klimatyzacja","fleet.a2":"Komfortowe wnętrze","fleet.a3":"Ładowarka do telefonu","fleet.a4":"Więcej miejsca","fleet.a5":"Duży bagażnik","fleet.a6":"Idealny dla rodzin/grup",
+"border.title":"A co z granicą?","border.text":"Z wyprzedzeniem wyjaśnimy, jakie dokumenty i warunki dotyczą Twojej podróży.","border.1":"Podpowiemy, co zabrać","border.2":"Wyjaśnimy procedurę przekraczania granicy","border.3":"Pozostajemy w kontakcie podczas podróży","tips.1h":"Dokumenty","tips.1p":"Sprawdź wcześniej paszport, wizę/podstawę wjazdu i inne wymagane dokumenty.","tips.2h":"Bagaż","tips.2p":"Poinformuj nas przy rezerwacji o dużym lub nietypowym bagażu.","tips.3h":"Oczekiwanie","tips.3p":"Czas przekroczenia granicy może się zmieniać i nie zależy w pełni od kierowcy.","tips.4h":"Ważne","tips.4p":"Zasady wjazdu i dokumenty mogą się zmieniać — sprawdź aktualne wymagania przed podróżą.",
+"reviews.title":"Klienci do nas wracają","reviews.sub":"Przykładowe opinie — po uruchomieniu zastąp je prawdziwymi.","reviews.r1":"„Bardzo wygodnie: odbiór spod mieszkania w Gdańsku i przejazd pod wskazany adres w Kaliningradzie. Spokojnie i bez przesiadek.”","reviews.r2":"„Kierowca był w kontakcie, a szczegóły przejazdu zostały wyjaśnione wcześniej. Czyste auto i komfortowa podróż.”","reviews.r3":"„Podróżowaliśmy rodziną z bagażami. Minivan sprawdził się świetnie i było dużo miejsca.”",
+"faq.sub":"Odpowiedzi na najczęstsze pytania.","faq.q1":"Czy można podróżować ze zwierzęciem?","faq.a1":"Tak, ale poinformuj nas podczas rezerwacji. Warunki zależą od zwierzęcia i zasad przewozu.","faq.q2":"Ile bagażu mogę zabrać?","faq.a2":"Standardowy bagaż jest wliczony. O dużym lub nietypowym bagażu poinformuj wcześniej.","faq.q3":"Jak zapłacić?","faq.a3":"Sposób płatności ustalamy przy potwierdzeniu rezerwacji.","faq.q4":"Co jeśli mój lot jest opóźniony?","faq.a4":"Poinformuj nas jak najszybciej. Godzinę odbioru z lotniska można dostosować do sytuacji.","faq.q5":"Czy jeździcie w nocy?","faq.a5":"Tak, przejazdy można ustalić na dogodną godzinę, także rano i w nocy.",
+"contact.title":"Gotowy do podróży?","contact.text":"Wyślij zgłoszenie lub napisz do nas. Potwierdzimy trasę i cenę.","contact.formtitle":"Zamów transfer","form.name":"Imię","form.phone2":"Telefon","form.message":"Trasa i szczegóły","form.nameph":"Twoje imię","form.messageph":"np. Gdańsk → Kaliningrad, 2 osoby, 10 września","contact.submit":"Wyślij zgłoszenie","footer.copy":"© 2026 Just Transfer. Prywatny przewóz osób.","footer.legal":"Informacje na stronie nie zastępują oficjalnych wymagań władz."
+},
+de:{
+"nav.routes":"Routen","nav.how":"So buchen Sie","nav.fleet":"Fuhrpark","nav.reviews":"Bewertungen","nav.contacts":"Kontakt","cta.order":"Buchen",
+"hero.eyebrow":"Privater Transfer Europa → Kaliningrad","hero.title":"Transfer von Europa nach Kaliningrad ohne Umsteigen","hero.text":"Tür-zu-Tür im komfortablen Fahrzeug. Abholung an Ihrer Adresse, Unterstützung bei der Vorbereitung auf die Grenze und direkte Fahrt zum Ziel.","hero.p1":"Festpreis","hero.p2":"Tür zu Tür","hero.p3":"Fahrer erreichbar",
+"form.title":"Fahrt berechnen","form.sub":"5 Felder ausfüllen — wir melden uns und bestätigen den Preis.","form.from":"Von *","form.to":"Nach *","form.date":"Datum *","form.time":"Uhrzeit *","form.passengers":"Passagiere *","form.phone":"Telefon / WhatsApp *","form.submit":"Preis berechnen →","form.othercity":"Andere Stadt (manuell eingeben)","form.citytype":"Stadt eingeben","form.note":"Mit dem Absenden stimmen Sie der Kontaktaufnahme zu Ihrer Fahrt zu.","err.title":"Formular prüfen","err.required":"Bitte füllen Sie die markierten Felder aus.","err.phone":"Bitte geben Sie eine gültige Telefonnummer ein.","err.phoneplus":"Die Nummer muss mit „+“ beginnen und darf nur Ziffern enthalten.",
+"how.title":"So funktioniert es","how.sub":"Ein einfacher Ablauf ohne unnötige Schritte.","steps.1h":"Anfrage senden","steps.1p":"Route, Datum, Uhrzeit und Anzahl der Passagiere angeben.","steps.2h":"Wir bestätigen","steps.2p":"Details klären, Preis und Abholzeit festlegen.","steps.3h":"Fahrer holt Sie ab","steps.3p":"Der Fahrer kommt zum vereinbarten Ort und bleibt erreichbar.","steps.4h":"Direkt zur Adresse","steps.4p":"Ohne Umsteigen — direkt zu Ihrer Adresse in Kaliningrad.",
+"routes.title":"Beliebte Routen","routes.sub":"Richtpreise. Der endgültige Preis hängt von Adresse und Passagierzahl ab.","route.order":"Route buchen","route.from":"ab",
+"fleet.title":"Komfortabler Fuhrpark","fleet.sub":"Das Fahrzeug wird nach Passagierzahl und Gepäck ausgewählt.","fleet.sedan":"Limousine","fleet.sedantxt":"Für 1–3 Passagiere und normales Gepäck.","fleet.van":"Minivan","fleet.vantxt":"Für Gruppen bis 7 Personen und mehr Gepäck.","fleet.a1":"Klimaanlage","fleet.a2":"Komfortabler Innenraum","fleet.a3":"Handy-Ladung","fleet.a4":"Mehr Platz","fleet.a5":"Großer Kofferraum","fleet.a6":"Ideal für Familien/Gruppen",
+"border.title":"Was ist mit der Grenze?","border.text":"Wir erklären Ihnen vorab, welche Dokumente und Bedingungen für Ihre Reise relevant sind.","border.1":"Was Sie mitnehmen sollten","border.2":"Ablauf der Grenzkontrolle erklären","border.3":"Während der Fahrt erreichbar bleiben","tips.1h":"Dokumente","tips.1p":"Prüfen Sie vorab Reisepass, Visum/Einreisegrundlage und weitere erforderliche Dokumente.","tips.2h":"Gepäck","tips.2p":"Informieren Sie uns bei der Buchung über großes oder ungewöhnliches Gepäck.","tips.3h":"Wartezeit","tips.3p":"Die Grenzwartezeit kann sich ändern und liegt nicht vollständig in der Hand des Fahrers.","tips.4h":"Wichtig","tips.4p":"Einreisebestimmungen und Dokumente ändern sich — prüfen Sie die aktuellen Anforderungen vor der Reise.",
+"reviews.title":"Unsere Kunden kommen wieder","reviews.sub":"Beispielbewertungen — nach dem Start durch echte Bewertungen ersetzen.","reviews.r1":"„Sehr praktisch: Abholung direkt an der Wohnung in Danzig und Fahrt bis zur gewünschten Adresse in Kaliningrad. Ruhig und ohne Umsteigen.“","reviews.r2":"„Der Fahrer war erreichbar und die Details wurden vorher erklärt. Sauberes Auto und komfortable Fahrt.“","reviews.r3":"„Wir waren als Familie mit Gepäck unterwegs. Der Minivan war perfekt und bot viel Platz.“",
+"faq.sub":"Antworten auf häufige Fragen.","faq.q1":"Kann ich mit einem Haustier reisen?","faq.a1":"Ja, bitte bei der Buchung angeben. Die Bedingungen hängen vom Tier und den Transportvorschriften ab.","faq.q2":"Wie viel Gepäck kann ich mitnehmen?","faq.a2":"Normales Gepäck ist enthalten. Großes oder ungewöhnliches Gepäck bitte vorher melden.","faq.q3":"Wie kann ich bezahlen?","faq.a3":"Die Zahlungsart wird bei der Buchungsbestätigung vereinbart.","faq.q4":"Was passiert bei Flugverspätung?","faq.a4":"Informieren Sie uns so früh wie möglich. Abholzeiten am Flughafen können angepasst werden.","faq.q5":"Fahren Sie auch nachts?","faq.a5":"Ja, Fahrten können zu einer passenden Zeit vereinbart werden, auch früh morgens und nachts.",
+"contact.title":"Bereit für die Fahrt?","contact.text":"Senden Sie eine Anfrage oder schreiben Sie uns. Wir bestätigen Route und Endpreis.","contact.formtitle":"Transfer buchen","form.name":"Name","form.phone2":"Telefon","form.message":"Route und Details","form.nameph":"Ihr Name","form.messageph":"z. B. Danzig → Kaliningrad, 2 Personen, 10. September","contact.submit":"Anfrage senden","footer.copy":"© 2026 Just Transfer. Privater Personentransfer.","footer.legal":"Website-Informationen ersetzen nicht die offiziellen Anforderungen staatlicher Behörden."
+}};
+
+let lang=localStorage.getItem("lang")||((navigator.language||"ru").toLowerCase().startsWith("pl")?"pl":(navigator.language||"").toLowerCase().startsWith("de")?"de":(navigator.language||"").toLowerCase().startsWith("en")?"en":"ru");
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const ORDER_EMAIL="ootoo1992@gmail.com";
+function sendMail(subject,body){window.location.href=`mailto:${ORDER_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+// Anti-bot: honeypot + 3s time-trap. Returns true if the submission looks like a bot.
+const FORM_LOADED_AT=Date.now();
+function looksLikeBot(hpId){
+  const hp=$(hpId);
+  if(hp&&hp.value.trim()!=="") return true;            // honeypot filled
+  if(Date.now()-FORM_LOADED_AT<3000) return true;      // submitted too fast (<3s)
+  return false;
+}
+const destName={ru:"Калининград",en:"Kaliningrad",pl:"Kaliningrad",de:"Kaliningrad"};
+// Unified city list (stable value + per-language label). Kaliningrad is included so it can be both origin and destination.
+const cityList=[
+ {value:"Kaliningrad",ru:"Калининград",en:"Kaliningrad",pl:"Kaliningrad",de:"Kaliningrad"},
+ {value:"Gdansk",ru:"Гданьск",en:"Gdańsk",pl:"Gdańsk",de:"Danzig"},
+ {value:"Warsaw",ru:"Варшава",en:"Warsaw",pl:"Warszawa",de:"Warschau"},
+ {value:"Berlin",ru:"Берлин",en:"Berlin",pl:"Berlin",de:"Berlin"},
+ {value:"Poznan",ru:"Познань",en:"Poznań",pl:"Poznań",de:"Posen"},
+ {value:"Olsztyn",ru:"Ольштын",en:"Olsztyn",pl:"Olsztyn",de:"Allenstein"},
+ {value:"Elblag",ru:"Эльблонг",en:"Elbląg",pl:"Elbląg",de:"Elbing"},
+ {value:"Hamburg",ru:"Гамбург",en:"Hamburg",pl:"Hamburg",de:"Hamburg"}
+];
+function t(k){return (dict[lang]&&dict[lang][k])||dict.ru[k]||k}
+function renderRoutes(){
+  const box=$("#routeList"); box.innerHTML="";
+  const dest=destName[lang]||destName.ru;
+  routes.forEach(r=>{const x=r[lang]||r.ru;box.insertAdjacentHTML("beforeend",`<article class="route"><div class="route-top"><h3>${x[0]} → ${dest}</h3><span class="badge">door-to-door</span></div><div class="route-meta"><span>◷ ${x[2]}</span><span>🚗 private</span></div><div class="price">${t("route.from")} ${x[1]}</div><button class="btn btn-dark route-btn" data-city="${r.city}">${t("route.order")}</button></article>`)});
+  $$(".route-btn").forEach(b=>b.onclick=()=>{const f=$("#from");f.value=b.dataset.city;toggleCustom("#from");location.hash="contacts";$("#phone").focus()});
+}
+function buildCitySelect(id,defaultValue){
+  const s=$(id);if(!s)return;const prev=s.value;
+  const opts=cityList.map(c=>`<option value="${c.value}">${c[lang]||c.ru}</option>`).join("");
+  s.innerHTML=opts+`<option value="__other">${t("form.othercity")}</option>`;
+  // keep previous selection across language switches, else use default
+  s.value=[...cityList.map(c=>c.value),"__other"].includes(prev)?prev:defaultValue;
+  toggleCustom(id);
+}
+function toggleCustom(id){
+  const s=$(id),input=$(id+"Custom");if(!s||!input)return;
+  const other=s.value==="__other";
+  input.style.display=other?"block":"none";
+  if(other){input.required=true}else{input.required=false;input.value=""}
+}
+function renderFrom(){buildCitySelect("#from","Gdansk")}
+function renderTo(){buildCitySelect("#to","Kaliningrad")}
+const meta={
+ru:["Трансфер из Европы в Калининград — Just Transfer","Частный трансфер Берлин, Варшава, Гданьск → Калининград. Дверь в дверь, фиксированная цена, комфортный автомобиль."],
+en:["Private transfer to Kaliningrad — Just Transfer","Private driver and car transfer from Berlin, Warsaw, Gdansk and Europe to Kaliningrad. Door-to-door service."],
+pl:["Transfer do Kaliningradu — Just Transfer","Prywatny transfer z Warszawy, Gdańska i Polski do Kaliningradu. Door-to-door, komfortowy samochód."],
+de:["Transfer nach Kaliningrad — Just Transfer","Privater Fahrservice von Berlin, Warschau und Deutschland nach Kaliningrad. Tür-zu-Tür und komfortabel."]
+};
+function setLang(l){
+ lang=l;localStorage.setItem("lang",l);document.documentElement.lang=l;
+ $$("[data-i18n]").forEach(el=>el.textContent=t(el.dataset.i18n));
+ $$("[data-i18n-ph]").forEach(el=>el.placeholder=t(el.dataset.i18nPh));
+ $$(".lang").forEach(b=>b.classList.toggle("active",b.dataset.lang===l));
+ document.title=meta[l][0];$("meta[name=description]").content=meta[l][1];
+ renderFrom();renderTo();renderRoutes();
+}
+$$(".lang").forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
+$("#from").addEventListener("change",()=>toggleCustom("#from"));
+$("#to").addEventListener("change",()=>toggleCustom("#to"));
+$$(".faq-q").forEach(q=>q.onclick=()=>q.parentElement.classList.toggle("open"));
+$("#bookingForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ if(looksLikeBot("#bookingHp")) return;   // silently drop bot submissions
+ let phone=$("#phone").value.trim();
+ // resolve custom cities
+ const fromVal=$("#from").value==="__other"?$("#fromCustom").value.trim():$("#from").value;
+ const toVal=$("#to").value==="__other"?$("#toCustom").value.trim():$("#to").value;
+ let ok=true,missing=false,phoneErr="";
+ [["#from","#fromCustom",fromVal],["#to","#toCustom",toVal]].forEach(([sel,inp,val])=>{
+   const el=$(sel).value==="__other"?$(inp):$(sel);
+   if(!val){el.classList.add("error");ok=false;missing=true}else{el.classList.remove("error")}
+ });
+ // phone: must start with "+" then digits only
+ if(!phone.startsWith("+")){ phoneErr="err.phoneplus" }
+ else if(!/^\+[0-9]{7,15}$/.test(phone)){ phoneErr="err.phone" }
+ if(phoneErr){ $("#phone").classList.add("error"); ok=false } else $("#phone").classList.remove("error");
+ const r=$("#result");
+ if(!ok){
+   r.classList.add("err");r.style.display="block";
+   r.innerHTML=`<strong>${t("err.title")}</strong>${missing?t("err.required"):t(phoneErr)}`;
+   return;
+ }
+ r.classList.remove("err");
+ // build and open email to the operator
+ const passengers=$("#passengers").value,date=$("#date").value,time=$("#time").value;
+ const body=`New transfer request\n\nFrom: ${fromVal}\nTo: ${toVal}\nDate: ${date}\nTime: ${time}\nPassengers: ${passengers}\nPhone / WhatsApp: ${phone}\nLanguage: ${lang.toUpperCase()}`;
+ sendMail(`Transfer request: ${fromVal} → ${toVal}`,body);
+ r.style.display="block";r.innerHTML=`<strong>${lang==="ru"?"Заявка принята":lang==="pl"?"Zgłoszenie przyjęte":lang==="de"?"Anfrage erhalten":"Request received"}</strong>${lang==="ru"?"Открываем почту для отправки заявки. Свяжемся с вами для подтверждения маршрута и цены.":lang==="pl"?"Otwieramy e-mail, aby wysłać zgłoszenie. Skontaktujemy się, aby potwierdzić trasę i cenę.":lang==="de"?"Wir öffnen Ihr E-Mail-Programm zum Senden. Wir melden uns zur Bestätigung von Route und Preis.":"Opening your email app to send the request. We will contact you to confirm the route and price."}`;
+});
+$("#contactForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ if(looksLikeBot("#contactHp")) return;   // silently drop bot submissions
+ const name=$("#cName").value.trim(),phone=$("#cPhone").value.trim(),message=$("#cMessage").value.trim();
+ // phone: must start with "+" then digits only
+ let cPhoneErr="";
+ if(!phone.startsWith("+")){ cPhoneErr="err.phoneplus" }
+ else if(!/^\+[0-9]{7,15}$/.test(phone)){ cPhoneErr="err.phone" }
+ if(cPhoneErr){ $("#cPhone").classList.add("error"); alert(t(cPhoneErr)); return } else $("#cPhone").classList.remove("error");
+ const body=`New transfer request\n\nName: ${name}\nPhone: ${phone}\nRoute and details: ${message}\nLanguage: ${lang.toUpperCase()}`;
+ sendMail("Transfer request",body);
+ alert(lang==="ru"?"Спасибо! Открываем почту для отправки заявки.":lang==="pl"?"Dziękujemy! Otwieramy e-mail, aby wysłać zgłoszenie.":lang==="de"?"Danke! Wir öffnen Ihr E-Mail-Programm zum Senden.":"Thank you! Opening your email app to send the request.");
+ e.target.reset();
+});
+$("#date").min=new Date().toISOString().split("T")[0];
+setLang(lang);
+</script>
+</body></html>
